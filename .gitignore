@@ -1,6 +1,5 @@
-
-# Created by https://www.gitignore.io/api/vue,node,macos,windows,intellij+all,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=vue,node,macos,windows,intellij+all,visualstudiocode
+# Created by https://www.gitignore.io/api/node,vuejs,macos,windows,intellij+all,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=node,vuejs,macos,windows,intellij+all,visualstudiocode
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -217,16 +216,12 @@ typings/
 # Ignore all local history of files
 .history
 
-### Vue ###
-# gitignore template for Vue.js projects
-#
+### Vuejs ###
 # Recommended template: Node.gitignore
 
-# TODO: where does this rule come from?
-docs/_book
-
-# TODO: where does this rule come from?
-test/
+dist/
+npm-debug.log
+yarn-error.log
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -254,7 +249,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/vue,node,macos,windows,intellij+all,visualstudiocode
+# End of https://www.gitignore.io/api/node,vuejs,macos,windows,intellij+all,visualstudiocode
 
 .DS_Store
 node_modules
