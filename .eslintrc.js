@@ -19,6 +19,7 @@ module.exports = {
         "max-len": ["error", { "code": 120 }],
         "no-multiple-empty-lines": ["error", { max: 1 }],
         "quotes": ["error", "double"],
+        "semi": "error",
         "space-infix-ops": "error",
         /*
          * ECMAScript 6
