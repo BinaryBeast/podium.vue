@@ -45,7 +45,7 @@ module.exports = {
             ignores: ["textarea"],
         }],
         "vue/mustache-interpolation-spacing": "error",
-        "vue/name-property-casing": "error",
+        "vue/name-property-casing": ["error", "kebab-case"],
         "vue/no-multi-spaces": "error",
         "vue/no-spaces-around-equal-signs-in-attribute": "error",
         "vue/no-template-shadow": "error",
