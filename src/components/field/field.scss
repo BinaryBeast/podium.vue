@@ -1,0 +1,20 @@
+.field
+{
+}
+// end .field
+
+    .field__label
+    {
+        @include font_size(16px);
+        @include line_height($baseline_grid * 3);
+    }
+    // end .field__label
+
+    .field__input
+    {
+        height: $baseline_grid * 5;
+        padding: 0 $column_gutter;
+
+        @include font_size(16px);
+    }
+    // end .field__input
