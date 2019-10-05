@@ -1,0 +1,7 @@
+h1
+{
+    color: podium_colour("primary");
+
+    @include font_size(32px);
+}
+// end h1
