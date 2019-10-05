@@ -1,0 +1,66 @@
+// colours
+// {
+    // greyscale
+    // {
+        $white: #FFFFFF;
+        $black: #000000;
+
+        $interface_colours: (
+            "grey": (
+                900: hsla(210, 20%, 10%, 1),
+                800: hsla(210, 18%, 20%, 1),
+                700: hsla(210, 16%, 30%, 1),
+                600: hsla(210, 14%, 40%, 1),
+                500: hsla(210, 12%, 50%, 1),
+                400: hsla(210, 14%, 60%, 1),
+                300: hsla(210, 16%, 70%, 1),
+                200: hsla(210, 18%, 80%, 1),
+                100: hsla(210, 20%, 90%, 1),
+            ),
+        );
+
+        @function interface_colour($key: "primary", $shade: 500)
+        {
+            $color: null;
+
+            $spectrum: map-get($interface_colours, $key);
+
+            @if $spectrum
+            {
+                $color: map-get($spectrum, $shade);
+            }
+
+            @return $color;
+        }
+    // }
+
+    // Podium branding
+    // {
+        $podium_colours: (
+            "primary": hsla(334, 79%, 38%, 1)
+        );
+
+        @function podium_colour($key: "primary")
+        {
+            @return map-get($podium_colours, $key);
+        }
+    // }
+// }
+
+// default structural
+// {
+    $baseline_grid: 8px;
+
+    $page_gutter: 50px;
+
+    $columns: 12;
+    $column_width: (100% / $columns);
+    $column_gutter: 10px;
+// }
+
+// Podium config
+// {
+    $drawer_width: 100px;
+
+    $base_font_size: 16px;
+// }

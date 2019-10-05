@@ -1,0 +1,14 @@
+@function fade($colour, $by_how_much)
+{
+    @return transparentize($colour, $by_how_much);
+}
+
+@function strip_units($number)
+{
+    @return $number / ($number * 0 + 1);
+}
+
+@function rem($pixels)
+{
+    @return #{strip_units($pixels) / 16}rem;
+}

@@ -1,0 +1,67 @@
+// fonts list
+// {
+    // System
+    // {
+        $system_stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+        @mixin font__system($size: $base_font_size, $weight: 300, $style: normal, $important: false)
+        {
+            font:
+            {
+                family: $system_stack $important;
+                size: rem($size) $important;
+                weight: $weight $important;
+                style: $style $important;
+            }
+        }
+    // }
+    // end System
+
+    // Code
+    // {
+        $code_stack: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+
+        @mixin font__monospace($size: $base_font_size, $weight: normal, $style: normal, $important: false)
+        {
+            font:
+            {
+                family: $code_stack $important;
+                size: rem($size) $important;
+                weight: $weight $important;
+                style: $style $important;
+            }
+        }
+    // }
+    // end Code
+
+    // Overpass
+    // {
+        $overpass_stack: "Overpass", $system_stack;
+
+        @mixin font__overpass($size: $base_font_size, $weight: normal, $style: normal, $important: false)
+        {
+            font:
+            {
+                family: $overpass_stack $important;
+                size: rem($size) $important;
+                weight: $weight $important;
+                style: $style $important;
+            }
+        }
+    // }
+    // end Overpass
+// }
+// end fonts list
+
+// DRY
+// {
+    @mixin font__content($size: $base_font_size, $weight: 400, $style: normal, $important: null)
+    {
+        @include font__overpass($size, $weight, $style, $important);
+    }
+
+    @mixin font__code($size: $base_font_size, $weight: normal, $style: normal, $important: null)
+    {
+        @include font__monospace($size, $weight, $style, $important);
+    }
+// }
