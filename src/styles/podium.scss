@@ -1,0 +1,28 @@
+@import "reset.css";
+@import "_base.scss";
+
+html
+{
+    box-sizing: border-box;
+}
+// end html
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+// end *
+// end *::before
+// end *::after
+
+body
+{
+    color: interface_colour("grey", 900);
+
+    @include font__content();
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+// end body
