@@ -1,0 +1,25 @@
+#drawer
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: $drawer_width;
+    height: 100%;
+
+    background-color: interface_colour("grey", 100);
+}
+// end #drawer
+
+    .drawer__link
+    {
+        display: block;
+        margin-top: $baseline_grid * 2;
+        padding: 0 $column_gutter;
+
+        color: podium_colour("primary");
+
+        @include font_size(14px);
+    }
+    // end .drawer__link
