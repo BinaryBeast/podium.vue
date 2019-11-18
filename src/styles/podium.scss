@@ -19,6 +19,7 @@ html
 
 body
 {
+    background-color: interface_colour("grey", 100);
     color: interface_colour("grey", 900);
 
     @include font__content();
