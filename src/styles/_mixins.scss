@@ -18,3 +18,9 @@
     line-height: rem($pixels);
 }
 // end line_height()
+
+@mixin border_radius($r)
+{
+    border-radius: $r;
+}
+// end @mixin border_radius($r)
