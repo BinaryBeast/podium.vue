@@ -1,0 +1,23 @@
+.button
+{
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    min-height: $baseline * 4;
+
+    background-color: $black;
+    @include border_radius(4px);
+}
+// .button
+
+    .button__caption
+    {
+        display: inline-block;
+        padding: 0 $column_gutter;
+
+        color: $white;
+
+        @include font_size(12px);
+        @include line_height($baseline * 2);
+    }
+    // end .button__caption
