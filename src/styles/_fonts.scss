@@ -50,6 +50,23 @@
         }
     // }
     // end Overpass
+
+    // Nunito Sans
+    // {
+        $nunito_sans_stack: "Nunito Sans", $system_stack;
+
+        @mixin font__nunito_sans($size: $base_font_size, $weight: normal, $style: normal, $important: false)
+        {
+            font:
+            {
+                family: $nunito_sans_stack $important;
+                size: rem($size) $important;
+                weight: $weight $important;
+                style: $style $important;
+            }
+        }
+    // }
+    // end Nunito Sans
 // }
 // end fonts list
 
@@ -57,7 +74,7 @@
 // {
     @mixin font__content($size: $base_font_size, $weight: 400, $style: normal, $important: null)
     {
-        @include font__overpass($size, $weight, $style, $important);
+        @include font__nunito_sans($size, $weight, $style, $important);
     }
 
     @mixin font__code($size: $base_font_size, $weight: normal, $style: normal, $important: null)
