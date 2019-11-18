@@ -1,30 +1,17 @@
 <script>
-    const field = () => import("components/field/field.vue");
-
-    export default {
-        name: "login",
-        components: {
-            field
-        },
-    };
+  export default {
+    name: "login"
+  };
 </script>
 
 <template>
-    <form class="login">
-        <h1>
-            Login
-        </h1>
+  <form class="login">
+    <h1>
+      Login
+    </h1>
 
-        <field
-            label="Email address"
-            name="email"
-            type="email"
-        />
-
-        <field
-            label="Password"
-            name="password"
-            type="password"
-        />
-    </form>
+    <p>
+      Scatter will now open
+    </p>
+  </form>
 </template>

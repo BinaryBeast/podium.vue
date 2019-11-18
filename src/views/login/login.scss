@@ -2,3 +2,15 @@
 {
 }
 // end .login
+
+    .login__title
+    {
+        @include font_size(12px);
+    }
+    // end .login_title
+
+    .login__description
+    {
+        @include font_size(10px);
+    }
+    // end .login_description
