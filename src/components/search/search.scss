@@ -1,0 +1,61 @@
+$search: (
+    "height": 50px
+);
+@function search($key)
+{
+    @return map-get($search, $key);
+}
+
+.search
+{
+    position: relative;
+}
+// end .search
+
+    .search__label
+    {
+        position: relative;
+        z-index: 1;
+
+        display: block;
+    }
+    // end .search__label
+
+        .search__input
+        {
+            width: 240px;
+            max-width: 100%;
+            height: search("height");
+            padding-right: search("height");
+            padding-left: search("height") / 2;
+
+            background-color: interface_colour("grey", 100);
+            border: none;
+            @include border_radius(search("height") / 2);
+
+            @include font__content(16px);
+        }
+        // end .search__input
+
+    .search__submit
+    {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+
+        display: block;
+        width: search("height");
+        height: search("height");
+
+        background-color: transparent;
+        border: none;
+        @include border_radius(search("height") / 2);
+
+        &:hover
+        {
+            cursor: pointer;
+        }
+        // end .search__submit:hover
+    }
+    // end .search__submit
