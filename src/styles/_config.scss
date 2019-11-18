@@ -49,7 +49,7 @@
 
 // default structural
 // {
-    $baseline_grid: 8px;
+    $baseline: 8px;
 
     $page_gutter: 50px;
 
@@ -60,7 +60,8 @@
 
 // Podium config
 // {
-    $drawer_width: 100px;
+    $masthead_height: 120px;
+    $drawer_width: 240px;
 
     $base_font_size: 16px;
 // }
