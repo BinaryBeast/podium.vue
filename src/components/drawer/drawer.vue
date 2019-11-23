@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div id="drawer">
+  <div class="drawer">
     <router-link
       to="/"
       class="drawer__link"

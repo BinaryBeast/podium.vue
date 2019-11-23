@@ -1,7 +1,19 @@
-#inner
+.inner
 {
     padding-left: $drawer_width;
 
     background-color: interface_colour("grey", 200);
+
+    .masthead ~ &
+    {
+        padding-top: $masthead_height;
+    }
+    // end .masthead ~ .inner
+
+    .drawer ~ &
+    {
+        padding-left: $drawer_width;
+    }
+    // end .drawer ~ .inner
 }
-// end #inner
+// end .inner

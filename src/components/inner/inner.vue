@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div id="inner">
+  <div class="inner">
     <slot></slot>
   </div>
 </template>
