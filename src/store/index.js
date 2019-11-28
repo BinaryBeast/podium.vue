@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import scatter from "./modules/scatter";
+
+import scatter from "store/modules/scatter";
 
 Vue.use(Vuex);
 

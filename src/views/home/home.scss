@@ -5,3 +5,11 @@ h1
     @include font_size(32px);
 }
 // end h1
+
+pre
+{
+    color: #000000;
+
+    @include font_size(16px);
+}
+// end pre

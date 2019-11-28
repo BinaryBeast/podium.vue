@@ -8,6 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@scatterjs/core": "^2.7.47",
+    "@scatterjs/eosjs2": "^1.5.29",
     "core-js": "^2.6.5",
     "typeface-nunito-sans": "^0.0.72",
     "typeface-overpass": "^0.0.72",
